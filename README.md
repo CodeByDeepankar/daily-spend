@@ -1,102 +1,84 @@
-# Daily Spend
+# Tekkzy - Intelligent Cloud Applications
 
-Daily Spend is a modern, full-stack expense tracking application designed to help users manage their finances with elegance and ease. It features a responsive frontend with smooth animations and a robust serverless-ready backend.
+**Empowering Business Through Digital Innovation**
 
-## 🚀 Tech Stack
+Tekkzy enables businesses to digitize, automate, and scale with confidence. We are a forward-thinking technology company focused on simplifying complex business challenges through smart digital solutions.
+
+## 🚀 Overview
+
+Tekkzy provides end-to-end digital services that streamline operations and drive results. Our platform showcases our capabilities in cloud software, automation, and digital marketing, while providing a seamless way for clients to reach out and view our recent success stories.
+
+## 🌟 Key Features
+
+- **Modern UI/UX**: Built with Next.js 16 and Tailwind CSS v4 for a high-performance, responsive experience.
+- **Interactive Carousel**: 3D-style testimonials carousel showcasing real-time client inquiries and success stories.
+- **Service Offerings**: Detailed breakdown of our core services:
+  - Custom Cloud Software
+  - Business Automation
+  - Digital Marketing
+- **Secure Contact System**: Real-time inquiry form integrated with a serverless backend API.
+- **Authentication**: Admin panel login for managing internal resources (JWT based).
+
+## 🛠️ Tech Stack
 
 ### Frontend
 - **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
-- **Library:** [React 19](https://react.dev/)
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animations:** [Framer Motion](https://www.framer.com/motion/)
-- **Icons:** [Lucide React](https://lucide.dev/)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **Components:** Shadcn UI, Lucide React
+- **Animations:** Framer Motion, React Bits (Carousel)
 
 ### Backend
-- **Runtime:** [Node.js](https://nodejs.org/)
-- **Framework:** [Express.js](https://expressjs.com/)
-- **Database:** [MongoDB](https://www.mongodb.com/) (with Mongoose)
-- **Deployment:** [Serverless Framework](https://www.serverless.com/) (AWS Lambda compatible)
-- **Authentication:** JWT (JSON Web Tokens) & Bcryptjs
+- **Runtime:** Node.js
+- **Framework:** Express.js (Serverless)
+- **Infrastructure:** AWS Lambda (via Serverless Framework)
+- **Database:** MongoDB
+- **Authentication:** JWT & Bcrypt
 
-## 🛠️ Prerequisites
+## 🏁 Getting Started
 
-Before you begin, ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v18 or higher)
-- A [MongoDB](https://www.mongodb.com/cloud/atlas) connection URI (local or Atlas)
+### Prerequisites
+- Node.js (v18+)
+- MongoDB Atlas URI
+- AWS Credentials (for deployment)
 
-## 🏁 Quick Start
-
-### 1. Clone the Repository
+### 1. Clone & Install
 
 ```bash
 git clone <repository-url>
 cd daily-spend
 ```
 
-### 2. Backend Setup
+### 2. Frontend Setup
 
-Navigate to the backend directory and install dependencies:
+```bash
+cd frontend
+npm install
+npm run dev
+```
+The app will run at `http://localhost:3000`.
+
+### 3. Backend Setup
 
 ```bash
 cd backend
 npm install
+# Configure .env with MONGO_URI and JWT_SECRET
+npm start
 ```
+For local development, the backend runs on port 5000.
 
-Create a `.env` file in the `backend` directory with the following variables:
+## 🌐 Services
 
-```env
-MONGO_URI=mongodb+srv://<your-connection-string>
-JWT_SECRET=your_super_secret_jwt_key
-PORT=5000
-```
+### Custom Cloud Software
+Tailored systems designed to streamline business operations, improve reporting, and secure data management.
 
-Start the backend development server:
+### Intelligent Dashboards
+Centralized interfaces to automate routine tasks and provide real-time insights for data-driven decisions.
 
-```bash
-npm run dev
-```
-The server will start on `http://localhost:5000` (or your defined port).
+### Digital Growth
+Strategic digital marketing to expand online presence, reach new customers, and boost brand visibility.
 
-### 3. Frontend Setup
+## 📝 License
 
-Open a new terminal, navigate to the frontend directory, and install dependencies:
-
-```bash
-cd ../frontend
-npm install
-```
-
-Start the frontend development server:
-
-```bash
-npm run dev
-```
-
-The application will be available at `http://localhost:3000`.
-
-## 📁 Project Structure
-
-```
-daily-spend/
-├── backend/                # Express & Serverless Backend
-│   ├── config/             # Database configuration
-│   ├── controllers/        # Route logic
-│   ├── models/             # Mongoose schemas
-│   ├── routes/             # API routes
-│   └── serverless.yml      # Serverless deployment config
-│
-└── frontend/               # Next.js Frontend
-    ├── app/                # App Router pages and layouts
-    ├── components/         # Reusable UI components
-    ├── contexts/           # React Context (Auth)
-    └── lib/                # Utilities and API clients
-```
-
-## ✨ Features
-
-- **User Authentication:** Secure Sign Up and Login.
-- **Dashboard:** Overview of total balance and financial health.
-- **Expense Tracking:** Add, edit, and delete expenses.
-- **Categorization:** Visual icons and colors for different expense categories.
-- **Responsive Design:** Works seamlessly on desktop and mobile.
+© 2025 Tekkzy Intelligent Cloud Applications Pvt. Ltd. All rights reserved.

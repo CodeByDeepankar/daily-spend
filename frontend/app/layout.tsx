@@ -1,5 +1,9 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { AuthProvider } from "@/contexts/AuthContext";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+// @ts-ignore
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daily Spend - Professional Tracker",
-  description: "Track your expenses with elegance and ease.",
+  title: "Tekkzy - Intelligent Cloud Applications",
+  description: "Daily Spend - Professional Tracker",
 };
 
 export default function RootLayout({
@@ -27,7 +31,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AuthProvider>
+          <Header />
+          {children}
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );

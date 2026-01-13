@@ -91,7 +91,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-us-east-1-c7c94560-c520",
-          "S3Key": "serverless/daily-spend-manager/dev/1768082954086-2026-01-10T22:09:14.086Z/daily-spend-manager.zip"
+          "S3Key": "serverless/daily-spend-manager/dev/1768322336247-2026-01-13T16:38:56.247Z/daily-spend-manager.zip"
         },
         "Handler": "lambda.handler",
         "Runtime": "nodejs18.x",
@@ -109,14 +109,14 @@
         "ApiLogGroup"
       ]
     },
-    "ApiLambdaVersionvVC8c6YBBLhU6xZyV9gBuR53sJkP0v2S4kMxUU13RQ": {
+    "ApiLambdaVersionQIX1Q3NDNSOMOVTefX5jBKXgauaylMiVqxmg8lEL0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "hIk4FWDIqZSq9HD+xI9bgqYvSy1LW5enhk38njO6icg="
+        "CodeSha256": "tm4VtgDof111niMsbQWasnCfR6WVHgZe5RuJhnNlmzE="
       }
     },
     "ApiGatewayRestApi": {
@@ -334,7 +334,7 @@
         "ApiLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1768082939469": {
+    "ApiGatewayDeployment1768322318569": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -397,7 +397,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersionvVC8c6YBBLhU6xZyV9gBuR53sJkP0v2S4kMxUU13RQ"
+        "Ref": "ApiLambdaVersionQIX1Q3NDNSOMOVTefX5jBKXgauaylMiVqxmg8lEL0"
       },
       "Export": {
         "Name": "sls-daily-spend-manager-dev-ApiLambdaFunctionQualifiedArn"

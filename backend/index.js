@@ -28,14 +28,14 @@ app.get('/', (req, res) => {
         status: 'running',
         endpoints: {
             auth: '/api/auth',
-            expenses: '/api/expenses'
+            contacts: '/api/contacts'
         }
     });
 });
 
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
-app.use('/api/expenses', require('./routes/expenseRoutes'));
+app.use('/api/contacts', require('./routes/contactRoutes'));
 
 // Error Handler
 app.use((err, req, res, next) => {
@@ -53,7 +53,7 @@ if (require.main === module) {
     connectDB().then(() => {
         const PORT = process.env.PORT || 3000;
         app.listen(PORT, () => {
-            console.log(`Server running on port ${PORT}`);
+            console.log(`Server running on port http://localhost:${PORT}`);
         });
     });
 }
